@@ -1,0 +1,21 @@
+#!/bin/bash
+
+set -e
+
+cd "$LFS"/sources
+
+tar -xvpf make-4.4.1.tar.gz
+
+cd make-4.4.1
+
+./configure --prefix=/usr   \
+            --host=$LFS_TGT \
+            --build=$(build-aux/config.guess)
+
+make
+
+make DESTDIR=$LFS install
+
+cd ..
+
+rm -rf make-4.4.1
