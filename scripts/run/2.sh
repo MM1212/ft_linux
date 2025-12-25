@@ -11,4 +11,8 @@ echo "Starting the build process ..."
 for script in $SCRIPTS; do
   echo "Running $script ..."
   bash $script
+  if [ $? -ne 0 ]; then
+    echo "Error occurred while running $script. Exiting."
+    exit 1
+  fi
 done
