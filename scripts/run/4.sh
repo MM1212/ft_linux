@@ -5,7 +5,7 @@ if [ "$(id -u)" -ne 0 ]; then
   exit 1
 fi
 
-SCRIPTS=$(echo scripts/chapters/chroot/7/*.sh | tr ' ' '\n' | sort -V)
+SCRIPTS=$(echo scripts/chapters/chroot/{7,8,9}/*.sh | tr ' ' '\n' | sort -V)
 
 echo "Starting the build process ..."
 for script in $SCRIPTS; do

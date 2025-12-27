@@ -2,6 +2,7 @@
 
 set -e
 
+rm -f /etc/{passwd,group,hosts,mtab}
 ln -sv /proc/self/mounts /etc/mtab
 
 cat > /etc/hosts << EOF
