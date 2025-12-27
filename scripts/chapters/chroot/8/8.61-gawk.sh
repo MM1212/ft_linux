@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf gawk-5.3.2.tar.xz
+tar -xvpf gawk-5.3.2.tar.xz
 cd gawk-5.3.2
 
 # Ensure some unneeded files are not installed

@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf man-db-2.13.1.tar.xz
+tar -xvpf man-db-2.13.1.tar.xz
 cd man-db-2.13.1
 
 ./configure --prefix=/usr                         \

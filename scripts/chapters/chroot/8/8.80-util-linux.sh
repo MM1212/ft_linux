@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf util-linux-2.41.1.tar.xz
+tar -xvpf util-linux-2.41.1.tar.xz
 cd util-linux-2.41.1
 
 ./configure --bindir=/usr/bin     \

@@ -19,7 +19,7 @@ ceefa052ded950a4c523688799193a44  elfutils-0.193.tar.bz2
 870cfd71c07d37ebe56f9f4aaf4ad872  findutils-4.10.0.tar.xz
 2882e3179748cc9f9c23ec593d6adc8d  flex-2.6.4.tar.gz
 c538415c1f27bd69cbbbf3cdd5135d39  flit_core-3.12.0.tar.gz
-9a96184b89ff4a52f252c9f25f36ca72  gawk-5.3.2.tar.xz
+b7014650c5f45e5d4837c31209dc0037  gawk-5.3.2.tar.xz
 b861b092bf1af683c46a8aa2e689a6fd  gcc-15.2.0.tar.xz
 aaa600665bc89e2febb3c7bd90679115  gdbm-1.26.tar.gz
 8e14e926f088e292f5f2bce95b81d10e  gettext-0.26.tar.xz
@@ -28,6 +28,9 @@ aaa600665bc89e2febb3c7bd90679115  gdbm-1.26.tar.gz
 31753b021ea78a21f154bf9eecb8b079  gperf-3.3.tar.gz
 5d9301ed9d209c4a88c8d3a6fd08b9ac  grep-3.12.tar.xz
 5e4f40315a22bb8a158748e7d5094c7d  groff-1.23.0.tar.gz
+eaa2135fddb6eb03f2c87ee1823e5a78  popt-1.19.tar.gz
+a8fc3e79336cd6e738ab44f9bc96a5aa  efivar-39.tar.gz
+e170147da25e1d5f72721ffc46fe4e06  efibootmgr-18.tar.gz
 60c564b1bdc39d8e43b3aab4bc0fb140  grub-2.12.tar.xz
 4bf5a10f287501ee8e8ebe00ef62b2c2  gzip-1.14.tar.xz
 de0a909103d4ff59d1424c5ec7ac9e4a  iana-etc-20250807.tar.gz
@@ -88,3 +91,15 @@ cf5e1feb023d22c6bdaa30e84ef3abe3  xz-5.8.1.tar.xz
 0ca4d6bb8d572fbcdb13cb36cd34833e  expect-5.45.4-gcc15-1.patch
 9a5997c3452909b1769918c759eff8a2  glibc-2.42-fhs-1.patch
 f75cca16a38da6caa7d52151f7136895  kbd-2.8.0-backspace-1.patch
+
+57dfd9e4eba93913a564aa14eab8052e  libunistring-1.3.tar.xz
+a8e113e040d57a523684e141970eea7a  libidn2-2.3.8.tar.gz
+870a798ee9860b6e77896548428dba7b  libpsl-0.21.5.tar.gz
+
+c70ba58b36f944e8ba1d655ace552881  wget-1.25.0.tar.gz
+b8872bb6cc5d18d03bea8ff5090b2b81  curl-8.15.0.tar.xz
+79a8f2aeae59d570a5da28c494445cc5  bash-completion-2.14.0.tar.xz
+ce62bc6caf02421ac40135dbb92377b5  dhcpcd-10.2.4.tar.xz
+8fd1ef83586618e38e4bec63e1646a35  blfs-systemd-units-20241211.tar.xz
+689148621a2eaa734497b12bed1c5202  openssh-10.0p1.tar.gz
+4ed255ef5f557f7e41349a7ee0938c16  git-2.52.0.tar.xz

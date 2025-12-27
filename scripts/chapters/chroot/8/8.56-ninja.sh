@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf ninja-1.13.1.tar.gz
+tar -xvpf ninja-1.13.1.tar.gz
 cd ninja-1.13.1
 
 # Optional: Make ninja recognize the environment variable NINJAJOBS

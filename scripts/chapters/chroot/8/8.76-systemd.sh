@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf systemd-257.8.tar.gz
+tar -xvpf systemd-257.8.tar.gz
 cd systemd-257.8
 
 # Remove two unneeded groups from the default udev rules
@@ -39,7 +39,7 @@ ninja
 ninja install
 
 # Install the man pages
-tar -xf ../../systemd-man-pages-257.8.tar.xz \
+tar -xvpf ../../systemd-man-pages-257.8.tar.xz \
     --no-same-owner --strip-components=1     \
     -C /usr/share/man
 

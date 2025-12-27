@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf dbus-1.16.2.tar.xz
+tar -xvpf dbus-1.16.2.tar.xz
 cd dbus-1.16.2
 
 mkdir build

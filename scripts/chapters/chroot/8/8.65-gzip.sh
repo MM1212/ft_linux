@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf gzip-1.14.tar.xz
+tar -xvpf gzip-1.14.tar.xz
 cd gzip-1.14
 
 ./configure --prefix=/usr

@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf e2fsprogs-1.47.3.tar.gz
+tar -xvpf e2fsprogs-1.47.3.tar.gz
 cd e2fsprogs-1.47.3
 
 # Build in a subdirectory as recommended

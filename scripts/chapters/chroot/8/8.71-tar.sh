@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf tar-1.35.tar.xz
+tar -xvpf tar-1.35.tar.xz
 cd tar-1.35
 
 FORCE_UNSAFE_CONFIGURE=1 \

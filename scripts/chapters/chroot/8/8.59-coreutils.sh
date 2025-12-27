@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf coreutils-9.7.tar.xz
+tar -xvpf coreutils-9.7.tar.xz
 cd coreutils-9.7
 
 # Apply security patch

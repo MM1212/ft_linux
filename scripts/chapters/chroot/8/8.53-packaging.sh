@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf packaging-25.0.tar.gz
+tar -xvpf packaging-25.0.tar.gz
 cd packaging-25.0
 
 pip3 wheel -w dist --no-cache-dir --no-build-isolation --no-deps $PWD

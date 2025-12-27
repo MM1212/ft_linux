@@ -16,3 +16,6 @@ cd bash-5.3
 make
 
 make install
+
+cd ..
+rm -rf bash-5.3

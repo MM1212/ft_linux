@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf patch-2.8.tar.xz
+tar -xvpf patch-2.8.tar.xz
 cd patch-2.8
 
 ./configure --prefix=/usr

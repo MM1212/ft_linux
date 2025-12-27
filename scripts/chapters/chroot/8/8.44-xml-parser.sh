@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf XML-Parser-2.47.tar.gz
+tar -xvpf XML-Parser-2.47.tar.gz
 cd XML-Parser-2.47
 
 perl Makefile.PL

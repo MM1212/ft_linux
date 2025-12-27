@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf meson-1.8.3.tar.gz
+tar -xvpf meson-1.8.3.tar.gz
 cd meson-1.8.3
 
 pip3 wheel -w dist --no-cache-dir --no-build-isolation --no-deps $PWD

@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf jinja2-3.1.6.tar.gz
+tar -xvpf jinja2-3.1.6.tar.gz
 cd jinja2-3.1.6
 
 pip3 wheel -w dist --no-cache-dir --no-build-isolation --no-deps $PWD

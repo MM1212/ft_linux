@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf libffi-3.5.2.tar.gz
+tar -xvpf libffi-3.5.2.tar.gz
 cd libffi-3.5.2
 
 ./configure --prefix=/usr          \

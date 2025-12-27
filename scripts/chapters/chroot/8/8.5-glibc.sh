@@ -103,7 +103,7 @@ rpc: files
 EOF
 
 # Adding Time Zone Data
-tar -xf ../../tzdata2025b.tar.gz
+tar -xvpf ../../tzdata2025b.tar.gz
 
 ZONEINFO=/usr/share/zoneinfo
 mkdir -pv $ZONEINFO/{posix,right}

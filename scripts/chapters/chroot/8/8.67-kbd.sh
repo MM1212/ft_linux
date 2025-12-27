@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf kbd-2.8.0.tar.xz
+tar -xvpf kbd-2.8.0.tar.xz
 cd kbd-2.8.0
 
 # Fix backspace and delete key behavior

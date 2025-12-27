@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf iproute2-6.16.0.tar.xz
+tar -xvpf iproute2-6.16.0.tar.xz
 cd iproute2-6.16.0
 
 # Prevent building arpd since it requires Berkeley DB

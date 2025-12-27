@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf procps-ng-4.0.5.tar.xz
+tar -xvpf procps-ng-4.0.5.tar.xz
 cd procps-ng-4.0.5
 
 ./configure --prefix=/usr                           \

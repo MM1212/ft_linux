@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf intltool-0.51.0.tar.gz
+tar -xvpf intltool-0.51.0.tar.gz
 cd intltool-0.51.0
 
 # Fix a warning that is caused by perl-5.22 and later

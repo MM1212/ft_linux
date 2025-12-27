@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf less-679.tar.gz
+tar -xvpf less-679.tar.gz
 cd less-679
 
 ./configure --prefix=/usr --sysconfdir=/etc

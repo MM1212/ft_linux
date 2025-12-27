@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf kmod-34.2.tar.xz
+tar -xvpf kmod-34.2.tar.xz
 cd kmod-34.2
 
 mkdir -p build

@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf Python-3.13.7.tar.xz
+tar -xvpf Python-3.13.7.tar.xz
 cd Python-3.13.7
 
 ./configure --prefix=/usr          \

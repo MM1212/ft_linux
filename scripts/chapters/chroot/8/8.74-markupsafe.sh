@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf markupsafe-3.0.2.tar.gz
+tar -xvpf markupsafe-3.0.2.tar.gz
 cd markupsafe-3.0.2
 
 pip3 wheel -w dist --no-cache-dir --no-build-isolation --no-deps $PWD

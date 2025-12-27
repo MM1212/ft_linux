@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf vim-9.1.1629.tar.gz
+tar -xvpf vim-9.1.1629.tar.gz
 cd vim-9.1.1629
 
 # Change the default location of the vimrc configuration file to /etc

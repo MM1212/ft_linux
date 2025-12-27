@@ -3,7 +3,7 @@ set -e
 
 cd /sources
 
-tar -xf texinfo-7.2.tar.xz
+tar -xvpf texinfo-7.2.tar.xz
 cd texinfo-7.2
 
 # Fix a code pattern that causes Perl-5.42 or later to display a warning
