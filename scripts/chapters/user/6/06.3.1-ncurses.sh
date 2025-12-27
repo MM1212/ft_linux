@@ -4,7 +4,7 @@ set -e
 
 cd "$LFS"/sources
 
-tar -xvpf ncurses-6.5-20250809.tar.xz
+tar -xvpf ncurses-6.5-20250809.tgz
 
 cd ncurses-6.5-20250809
 
