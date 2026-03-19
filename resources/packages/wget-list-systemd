@@ -104,3 +104,8 @@ https://github.com/NetworkConfiguration/dhcpcd/releases/download/v10.2.4/dhcpcd-
 https://www.linuxfromscratch.org/blfs/downloads/12.4-systemd/blfs-systemd-units-20241211.tar.xz
 https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.0p1.tar.gz
 https://www.kernel.org/pub/software/scm/git/git-2.52.0.tar.xz
+https://ftp.eq.uc.pt/software/unix/gnu/libtasn1/libtasn1-4.20.0.tar.gz
+https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.xz
+https://github.com/lfs-book/make-ca/archive/v1.16.1/make-ca-1.16.1.tar.gz
+https://www.netfilter.org/projects/iptables/files/iptables-1.8.11.tar.xz
+https://www.nano-editor.org/dist/v8/nano-8.6.tar.xz

@@ -104,3 +104,8 @@ ce62bc6caf02421ac40135dbb92377b5  dhcpcd-10.2.4.tar.xz
 8fd1ef83586618e38e4bec63e1646a35  blfs-systemd-units-20241211.tar.xz
 689148621a2eaa734497b12bed1c5202  openssh-10.0p1.tar.gz
 4ed255ef5f557f7e41349a7ee0938c16  git-2.52.0.tar.xz
+930f71d788cf37505a0327c1b84741be  libtasn1-4.20.0.tar.gz
+e9c5675508fcd8be54aa4c8cb8e794fc  p11-kit-0.25.5.tar.xz
+bf9cea2d24fc5344d4951b49f275c595  make-ca-1.16.1.tar.gz
+44191ce12055da9790a92429c771ba50  iptables-1.8.11.tar.xz
+3b5a70dd65ddee4bd848b620c1638526  nano-8.6.tar.xz

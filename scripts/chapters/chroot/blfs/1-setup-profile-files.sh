@@ -215,10 +215,10 @@ alias grep='grep --color=auto'
 NORMAL="\[\e[0m\]"
 RED="\[\e[1;31m\]"
 GREEN="\[\e[1;32m\]"
-if [[ $EUID == 0 ]] ; then
-  PS1="$RED\u [ $NORMAL\w$RED ]# $NORMAL"
+if [[ ${EUID} == 0 ]] ; then
+  PS1='\[\033[01;31m\]\u@\h\[\033[01;34m\] \W \$\[\033[00m\] '
 else
-  PS1="$GREEN\u [ $NORMAL\w$GREEN ]\$ $NORMAL"
+  PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '
 fi
 
 unset RED GREEN NORMAL
