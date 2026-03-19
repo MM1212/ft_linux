@@ -1,0 +1,59 @@
+[  0.738589] md: 
+[  0.738805] md: 
+[  0.738937] md: If you don't use raid, use raid=noautodetect
+[  0.739208] md: Autodetecting RAID arrays.
+[  0.739400] md: autorun ...
+[  0.739500] md: ... autorun DONE.
+[  0.739862] VFS: cannot open root device "PARTUUID=7637c36c-478c-408f-94bf-156fddae3abb" or unknown-block(0,0): error -6
+[  0.740446] Please append a correct "root=" boot option; here are the available partitions:
+[  0.740648] 
+[  0.740849] 0810    33554432 sdb 
+[  0.740851]  driver: sd
+[  0.741283] 0811      524288 sdb1 cc377983-ae1f-4f92-9580-577a6b098568
+[  0.741665] 0812    19530752 sdb2 69edbeae-102d-4e10-b662-1537e378d966
+[  0.742040] 0813     2097152 sdb3 697a7221-e1d1-4e84-ae2e-b82a40e4b832
+[  0.742429] 0814      499712 sdb4 84223838-f54f-4705-9419-6fc87588be23
+[  0.742806] 0800    33554432 sda 
+[  0.743188]  driver: sd
+[  0.743590] 0801      399424 sda1 6b42519f-7c63-40c0-8204-79f21e7cc64e
+[  0.744370] 0802     1000448 sda2 755dd2f9-c4d0-4dd9-a5da-fbdaa5ba21a0
+[  0.744558] 0803    31552512 sda3
+[  0.745118] List of all bdev filesystems:
+[  0.745306]  ext3
+[  0.745486]  ext2
+[  0.745680]  ext4
+[  0.745884]  vfat
+[  0.745889]  msdos
+[  0.745899]  iso9660
+[  0.745912] Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(0,0)
+[  0.745918] CPU: 3 UID: 0 PID: 1 Comm: swapper/0 Not tainted 6.16.1-martiper PREEMPT (voluntary)
+[  0.745925] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 4.2023.08-4 02/15/2024
+[  0.745928] Call Trace:
+[  0.745931]  dump_stack_lvl
+[  0.745936]  panic+0x10c/0x2bd
+[  0.745939]  prepare_namespace+0x1dc/0x230
+[  0.745944]  kernel_init_freeable+0x1fb/0x210
+[  0.745952]  kernel_init+0x13/0x130
+[  0.745958]  ret_from_fork+0x7a/0xa0
+[  0.745965] Kernel Offset: 0x37200000 from 0xffffffff81000000
+
+================================================================================
+DIAGNOSIS:
+================================================================================
+
+PROBLEM: Kernel cannot find root partition.
+
+Looking for:  PARTUUID=7637c36c-478c-408f-94bf-156fddae3abb
+              (This PARTUUID does not exist on the system!)
+
+Available partitions:
+  sdb1:  524288 blocks  (boot)     UUID: cc377983-ae1f-4f92-9580-577a6b098568
+  sdb2: 19530752 blocks (root)     UUID: 69edbeae-102d-4e10-b662-1537e378d966
+  sdb3:  2097152 blocks (swap)     UUID: 697a7221-e1d1-4e84-ae2e-b82a40e4b832
+  sdb4:   499712 blocks (efi)      UUID: 84223838-f54f-4705-9419-6fc87588be23
+
+FIX: Update grub.cfg to use the correct root partition:
+  root=PARTUUID=<sdb2-partuuid> or root=/dev/sdb2
+
+Run: blkid /dev/sdb2 -s PARTUUID -o value
+Then update grub.cfg with the correct PARTUUID.

@@ -44,12 +44,14 @@ install -v -m755 -d /usr/share/doc/openssh-10.0p1
 install -v -m644    INSTALL LICENCE OVERVIEW README* \
                     /usr/share/doc/openssh-10.0p1
 
-cd /sources
+# Disable root login via ssh
+echo "PermitRootLogin no" >> /etc/ssh/sshd_config
+
 # Install sshd systemd unit (requires blfs-systemd-units)
 if [ ! -d /sources/blfs-systemd-units-20241211 ]; then
     tar -xvpf blfs-systemd-units-20241211.tar.xz
 fi
-cd /blfs-systemd-units-20241211
+cd /sources/blfs-systemd-units-20241211
 make install-sshd
 
 cd /sources
